@@ -1,0 +1,39 @@
+resources:
+  jobs:
+    Company_Orchestration:
+      name: Company_Orchestration
+      email_notifications:
+        on_start:
+          - dawoodadel888@gmail.com
+        on_success:
+          - dawoodadel888@gmail.com
+        on_failure:
+          - dawoodadel888@gmail.com
+        no_alert_for_skipped_runs: true
+      notification_settings:
+        no_alert_for_skipped_runs: true
+      tasks:
+        - task_key: AWS_Company_Orchestration
+          pipeline_task:
+            pipeline_id: a1ecf23a-ddb3-4875-82ce-a6ed504208e1
+            full_refresh: false
+        - task_key: aws_Dashboard
+          depends_on:
+            - task_key: AWS_Company_Orchestration
+          dashboard_task:
+            subscription:
+              attachment:
+                page_attachment: {}
+            warehouse_id: de99c20027dadfbe
+            dashboard_id: 01f1e69b81141a739aeba39fc1603871
+      performance_target: PERFORMANCE_OPTIMIZED
+      triggers:
+        - pause_status: UNPAUSED
+          periodic:
+            interval: 1
+            unit: DAYS
+        - pause_status: UNPAUSED
+          table_update:
+            table_names:
+              - dawood.aws_organization_schema.aws_organization_table
+            condition: ALL_UPDATED
