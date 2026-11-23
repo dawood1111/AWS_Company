@@ -77,12 +77,14 @@ Built in a PySpark notebook:
 
 ## Screenshots
 
-![Pipeline and job](<img width="1276" height="682" alt="image" src="https://github.com/user-attachments/assets/45463276-545d-4d1c-a9e4-286503f461ea" />
+![Pipeline and job]
+<img width="1276" height="682" alt="image" src="https://github.com/user-attachments/assets/45463276-545d-4d1c-a9e4-286503f461ea" />
 <img width="1701" height="927" alt="image" src="https://github.com/user-attachments/assets/71bad6e5-d9b1-475d-be6d-b8dfedc5eab6" />
 
-)
-![Power BI](<img width="1856" height="1076" alt="image" src="https://github.com/user-attachments/assets/f3847fd8-de92-4e6d-bbaf-9bfd7d34bed0" />
-)
+
+![Power BI]
+<img width="1856" height="1076" alt="image" src="https://github.com/user-attachments/assets/f3847fd8-de92-4e6d-bbaf-9bfd7d34bed0" />
+
 
 
 `dawood adel jaber`
